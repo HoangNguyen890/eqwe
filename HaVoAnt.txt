@@ -1,0 +1,77 @@
+Microsoft Windows [Version 10.0.17763.107]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+E:\voha\AntToolDemoo>javac -sourcepath src -d build\classes src\oata\HelloWorld.java
+
+E:\voha\AntToolDemoo>java -cp build\classes oata.HelloWorld
+bbbbbbbbbbbb
+
+E:\voha\AntToolDemoo>javac -sourcepath src -d build\classes src\oata\HelloWorld.java
+
+E:\voha\AntToolDemoo>java -cp build\classes oata.HelloWorld
+Xin chao Ha Vo
+
+E:\voha\AntToolDemoo>echo Main-Class: oata.HelloWorld>myManifest
+
+E:\voha\AntToolDemoo>jar cfm build\jar\HelloWorld.jar myManifest -C build\classes .
+
+E:\voha\AntToolDemoo>java -jar build\jar\HelloWorld.jar
+Xin chao Ha Vo
+
+E:\voha\AntToolDemoo>ant clean
+Buildfile: E:\voha\AntToolDemoo\build.xml
+
+clean:
+   [delete] Deleting directory E:\voha\AntToolDemoo\build
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+E:\voha\AntToolDemoo>ant compile
+Buildfile: E:\voha\AntToolDemoo\build.xml
+
+compile:
+    [mkdir] Created dir: E:\voha\AntToolDemoo\build\classes
+    [javac] E:\voha\AntToolDemoo\build.xml:8: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to E:\voha\AntToolDemoo\build\classes
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+E:\voha\AntToolDemoo>ant clean
+Buildfile: E:\voha\AntToolDemoo\build.xml
+
+clean:
+   [delete] Deleting directory E:\voha\AntToolDemoo\build
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+E:\voha\AntToolDemoo>ant compile
+Buildfile: E:\voha\AntToolDemoo\build.xml
+
+compile:
+    [mkdir] Created dir: E:\voha\AntToolDemoo\build\classes
+    [javac] E:\voha\AntToolDemoo\build.xml:8: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to E:\voha\AntToolDemoo\build\classes
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+E:\voha\AntToolDemoo>ant jar
+Buildfile: E:\voha\AntToolDemoo\build.xml
+
+jar:
+    [mkdir] Created dir: E:\voha\AntToolDemoo\build\jar
+      [jar] Building jar: E:\voha\AntToolDemoo\build\jar\HelloWorld.jar
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+E:\voha\AntToolDemoo>java jar build/jar/HelloWorld.jar
+Error: Could not find or load main class jar
+
+E:\voha\AntToolDemoo>java -jar build/jar/HelloWorld.jar
+Xin chao Ha Vo
+
+E:\voha\AntToolDemoo>
